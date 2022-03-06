@@ -1,16 +1,34 @@
-const progress = document.querySelector('.progress-done');
+// Selectors
+const progressData = document.querySelector('.progress-done');
 
-progress.style.width = progress.getAttribute('data-done') + '%';
-progress.style.opacity = 1;
-////////
+const progressBar = document.querySelector('.progress');
 
-const dataDiv = document.querySelector('.progress-done');
-const updateButton = document.querySelector('button');
+const userInput = document.querySelector('.user-input');
+const userDate = document.querySelector('.user-date-input');
+const inputList = document.querySelector('.input-list');
+const submitButton = document.querySelector('button');
 
-updateButton.addEventListener('click', () => {
+// Event Listeners
+submitButton.addEventListener('click', addUserInput);
+
+function addUserInput(event) {
+  event.preventDefault();
+  const newLI = document.createElement('li');
+  // capture and store date value
+  // capture and store input value
+  const newUserInput = `$${userInput.value}`;
+  newLI.innerText = newUserInput;
+  inputList.appendChild(newLI);
+}
+
+// Progress Bar
+progressData.style.width = progressData.getAttribute('data-done') + '%';
+progressData.style.opacity = 1;
+
+submitButton.addEventListener('click', () => {
   let num = document.getElementById('text-1').value;
-  dataDiv.setAttribute('data-done', num);
-  progress.style.width = progress.getAttribute('data-done') + '%';
+  progressData.setAttribute('data-done', num);
+  progressData.style.width = progress.getAttribute('data-done') + '%';
   document.querySelector('.percentage').innerHTML = `${num}%`;
 });
 
