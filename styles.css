@@ -52,8 +52,6 @@ form button {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
   transition: all 0.5s ease;
-  display: block;
-  margin-top: 20px;
   float: right;
 }
 
@@ -64,14 +62,14 @@ form button:hover {
 
 form input {
   font-size: 1rem;
-  border: 1px solid black;
+  border: 1px solid #46385b;
   background: #fff;
   border-radius: 40px;
-  width: 100%;
   text-align: center;
   height: 40px;
   font-family: inherit;
   color: #b5afbd;
+  width: 50%;
 }
 
 input::-webkit-outer-spin-button,
@@ -89,8 +87,8 @@ li {
   list-style: none;
   text-align: center;
   padding: 10px 0;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid #46385b;
+  border-right: 1px solid #46385b;
 }
 
 li:nth-child(odd) {
@@ -103,16 +101,16 @@ li:nth-child(even) {
 li:first-child {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 1px solid #46385b;
+  border-left: 1px solid #46385b;
+  border-right: 1px solid #46385b;
 }
 li:last-child {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 1px solid #46385b;
+  border-left: 1px solid #46385b;
+  border-right: 1px solid #46385b;
 }
 
 .form-container {
@@ -122,7 +120,7 @@ li:last-child {
 
 .progress {
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #46385b;
   border-radius: 20px;
   position: relative;
   margin: 15px 0;
@@ -132,11 +130,11 @@ li:last-child {
 
 .progress-done {
   background: #25d341;
-  border-right: 1px solid #000;
+  border-right: 1px solid #46385b;
   /* background-image: linear-gradient(90deg, #f8ef42 0%, #0fd64f 74%); */
   /* box-shadow: 0 3px 3px -5px #f8ef42, 0 2px 5px #0fd64f; */
   border-radius: 20px;
-  color: black;
+  color: #46385b;
   display: flex;
   align-items: center;
   justify-content: center;
