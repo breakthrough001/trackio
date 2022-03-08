@@ -1,44 +1,40 @@
 // Selectors
-const progressBar = document.querySelector('.progress-done');
-const progressBarPercentage = document.querySelector('.progressBarPercentage');
+const progressBar = document.querySelector(".progress-done");
+const progressBarPercentage = document.querySelector(".progressBarPercentage");
 
-const userInput = document.querySelector('.user-input');
-const inputList = document.querySelector('.input-list');
-const submitButton = document.querySelector('button');
+const userInput = document.querySelector(".user-input");
+const inputList = document.querySelector(".input-list");
+const submitButton = document.querySelector("button");
 
 // Select Data Attribute
-const dataContainer = document.querySelector('#data-container');
-const dataValueHolder = parseInt(dataContainer.getAttribute('data-done'));
+const dataContainer = document.querySelector("#data-container");
+// Get value in data-value
+const dataValueHolder = parseInt(dataContainer.getAttribute("data-value"));
 console.log(dataValueHolder);
 
 // Event Listeners
-submitButton.addEventListener('click', addUserInput);
+submitButton.addEventListener("click", addUserInput);
 
 // Functions
 
 // Add User Input to List
 function addUserInput(event) {
-  event.preventDefault();
-  const newLI = document.createElement('li');
-  const newUserInput = `$${userInput.value}`;
-  newLI.innerText = newUserInput;
-  inputList.appendChild(newLI);
-  dataValueHolder.setAttribute('data-done', 5);
-  console.log(dataValueHolder);
+   event.preventDefault();
+   const newLI = document.createElement("li");
+   const newUserInput = `$${userInput.value}`;
+   newLI.innerText = newUserInput;
+   inputList.appendChild(newLI);
 }
 
 // Progress Bar Styling
 progressBar.style.opacity = 1;
-// This line is getting the value of data-done as a number then adding a % to it to set the width of the bar to that width
-progressBar.style.width = progressBar.getAttribute('data-done') + '%';
+// This line is getting the value of data-value as a number then adding a % to it to set the width of the bar to that width
+progressBar.style.width = progressBar.getAttribute("data-value") + "%";
 // Set padding left on percent number above progress bar
 progressBarPercentage.style.paddingLeft =
-  progressBar.getAttribute('data-done') - 4 + '%';
+   progressBar.getAttribute("data-value") - 4 + "%";
 
-// Try to change data done value!
-progressBar.setAttribute('data-done', 25);
-
-// console.log(progressBar.getAttribute('data-done'));
+// console.log(progressBar.getAttribute('data-value'));
 // console.log(progressBarPercentage.innerHTML.slice(0, -1));
 //
 //
@@ -49,10 +45,10 @@ progressBar.setAttribute('data-done', 25);
 // submitButton.addEventListener('click', () => {
 //   // num has to equal the input value number user enters
 //   let num = userInput.value;
-//   // let num = progressData.setAttribute('data-done', num);
-//   console.log('data-done', num);
+//   // let num = progressData.setAttribute('data-value', num);
+//   console.log('data-value', num);
 //   progressData
-//     .setAttribute(num) // progressData.style.width = progress.getAttribute('data-done') + '%';
+//     .setAttribute(num) // progressData.style.width = progress.getAttribute('data-value') + '%';
 //     .document.querySelector('.percentage').innerHTML = `${num}%`;
 // });
 
