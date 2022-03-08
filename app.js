@@ -9,8 +9,10 @@ const submitButton = document.querySelector("button");
 // Select Data Attribute
 const dataContainer = document.querySelector("#data-container");
 // Get value in data-value
-const dataValueHolder = parseInt(dataContainer.getAttribute("data-value"));
+let dataValueHolder = parseInt(dataContainer.getAttribute("data-value"));
 console.log(dataValueHolder);
+
+const user = document.querySelector("[data-value]");
 
 // Event Listeners
 submitButton.addEventListener("click", addUserInput);
@@ -24,6 +26,8 @@ function addUserInput(event) {
    const newUserInput = `$${userInput.value}`;
    newLI.innerText = newUserInput;
    inputList.appendChild(newLI);
+
+   // Change data-value
 }
 
 // Progress Bar Styling
