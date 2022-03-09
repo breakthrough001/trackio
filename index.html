@@ -24,9 +24,15 @@
     </header>
 
     <div class="form-container">
-      <p class="progressBarPercentage">0%</p>
+      <div class="goal-container">
+        <span class="progressBarPercentage">$0</span>
+        <span class="progress-bar-goal">$2,000</span>
+      </div>
+
       <div class="progress">
-        <div class="progress-done" id="data-container"></div>
+        <div class="progress-done" id="data-container">
+          <p class="bar-progress">0%</p>
+        </div>
 
         <div class="todo-container">
           <ul class="input-list"></ul>
@@ -38,6 +44,7 @@
             class="todo-input user-input"
             placeholder="Amount"
           />
+          <input type="number" class="user-goal" placeholder="Enter Goal" />
           <button class="todo-button" type="submit">SUBMIT</button>
         </form>
       </div>
