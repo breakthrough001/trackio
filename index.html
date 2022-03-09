@@ -26,30 +26,33 @@
     <div class="form-container">
       <div class="goal-container">
         <span class="progressBarPercentage">$0</span>
-        <span class="progress-bar-goal">$2,000</span>
+        <span class="progress-bar-goal"></span>
       </div>
 
       <div class="progress">
         <div class="progress-done" id="data-container">
           <p class="bar-progress">0%</p>
         </div>
-
-        <div class="todo-container">
-          <ul class="input-list"></ul>
-        </div>
-
-        <form>
-          <input
-            type="number"
-            class="todo-input user-input"
-            placeholder="Amount"
-          />
-          <input type="number" class="user-goal" placeholder="Enter Goal" />
-          <button class="todo-button" type="submit">SUBMIT</button>
-        </form>
       </div>
+
+      <div class="todo-container">
+        <ul class="input-list"></ul>
+      </div>
+
+      <form class="user-input-form">
+        <input
+          type="number"
+          class="todo-input user-input"
+          placeholder="Amount"
+        />
+        <button class="input-button" type="submit">SUBMIT</button>
+      </form>
     </div>
 
+    <form class="goal-form">
+      <input type="number" id="user-wish" placeholder="Enter Goal" />
+      <button class="goal-button" type="submit">SUBMIT</button>
+    </form>
     <script src="app.js"></script>
   </body>
 </html>

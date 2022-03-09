@@ -39,11 +39,11 @@ h2 {
   font-weight: 300;
 }
 
-form {
+.user-input-form {
   width: 100%;
 }
 
-form button {
+.user-input-form button {
   font-weight: 700;
   border: none;
   background: #ff005c;
@@ -55,12 +55,12 @@ form button {
   float: right;
 }
 
-form button:hover {
+.user-input-form button:hover {
   background: #71d8a4;
   color: #fff;
 }
 
-form input {
+.user-input-form input {
   font-size: 1rem;
   border: 1px solid #46385b;
   background: #fff;
@@ -122,7 +122,6 @@ li:last-child {
   background-color: #fff;
   border: 1px solid #46385b;
   border-radius: 20px;
-  position: relative;
   margin: 15px 0;
   height: 40px;
   width: 100%;
@@ -147,4 +146,9 @@ li:last-child {
 .goal-container {
   display: flex;
   justify-content: space-between;
+}
+
+.goal-form {
+  margin-top: 50px;
+  text-align: center;
 }
