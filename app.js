@@ -9,7 +9,6 @@ const userWish = document.querySelector('#user-wish');
 const inputList = document.querySelector('.input-list');
 const submitButton = document.querySelector('.input-button');
 const goalButton = document.querySelector('.goal-button');
-const goalFormInput = document.querySelector('.goal-form');
 let inputValues = [];
 
 // Select Data Attribute
@@ -73,6 +72,7 @@ function progressBarStyles(sumOfInputs, newUserGoal) {
   }
 }
 
+// global variable to be used in and out of function
 let global;
 
 function captureUserGoal(e) {
@@ -84,5 +84,3 @@ function captureUserGoal(e) {
 }
 
 // if no value entered make error message pop up Enter Value
-// need to capture user goal outside submit function and store it as a number
-// function needs to return a variable so it can be used outside of the function
