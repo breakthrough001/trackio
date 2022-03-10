@@ -56,6 +56,8 @@ function progressBarStyles(sumOfInputs, newUserGoal) {
       progressBar.style.opacity = 1;
       // set bar to 100%
       progressBar.style.width = 100 + "%";
+      // Remove border right
+      progressBar.style.borderRight = "none";
       // Hide Progress Currency
       progressBarPercentage.innerHTML = "";
       // Inner Bar Percent
