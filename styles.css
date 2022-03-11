@@ -300,6 +300,8 @@ input::-webkit-inner-spin-button {
 .icons-section {
   background: linear-gradient(112.87deg, #f6d365 0%, #fda085 100%);
   padding: 90px 0;
+  border-top: 1px solid #46385b;
+  border-bottom: 1px solid #46385b;
 }
 
 .icons-row {
