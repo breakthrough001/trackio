@@ -1,87 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-      />
-      <link rel="stylesheet" href="styles.css" />
-      <title>trackio</title>
-   </head>
-   <body>
-      <nav>
-         <div class="container">
-            <a href=""><img src="/img/logo.svg" alt="" /></a>
-            <ul>
-               <a href="#"><li>Saving Goals</li></a>
-               <a href="#"><li>Account</li></a>
-               <a href="#"><li>Log Out</li></a>
-            </ul>
-         </div>
-      </nav>
-      <header>
-         <h1>Savings Goal:</h1>
-         <h2 class="user-goal-text">Aruba Vacation</h2>
-      </header>
-
-      <div class="form-container">
-         <div class="goal-container">
-            <span class="progressBarPercentage">$0</span>
-            <span class="progress-bar-goal"></span>
-         </div>
-
-         <div class="progress">
-            <div class="progress-done" id="data-container">
-               <p class="bar-progress">0%</p>
-            </div>
-         </div>
-
-         <div class="todo-container">
-            <ul class="input-list"></ul>
-         </div>
-
-         <form class="user-input-form">
-            <input
-               type="number"
-               class="todo-input user-input"
-               placeholder="Amount"
-            />
-            <button class="input-button" type="submit">SUBMIT</button>
-         </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>trackio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
+        <ul>
+          <a href="progress-bar-page.html"><li>Saving Goals</li></a>
+          <a href="#"><li>Account</li></a>
+          <a href="#"><li>Log Out</li></a>
+        </ul>
       </div>
+    </nav>
 
-      <form class="goal-form">
-         <div class="input-container">
-            <input type="text" id="user-wish" placeholder="Enter Goal" />
-            <input type="number" id="user-target" placeholder="Enter Target" />
-         </div>
-         <button class="goal-button" type="submit">ENTER</button>
-      </form>
+    <section class="hero-section">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-6">
+            <h1>Track your progress.<br />Get results.</h1>
+            <a href="progress-bar-page.html"
+              ><button class="btn-primary mt-3">Try For Free</button></a
+            >
+          </div>
+          <div class="col-6">
+            <img class="w-100" src="img/hero-portrait.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <footer>
-         <div class="container">
-            <div class="left-col-footer">
-               <a href="#"><img src="/img/logo.svg" alt="" /></a>
-               <ul>
-                  <a href="#"><li>Home</li></a>
-                  <a href="#"><li>About</li></a>
-                  <a href="#"><li>Contact</li></a>
-               </ul>
-            </div>
-            <div class="middle-col-footer">
-               <p><strong>Contact Us</strong></p>
-               <a href="#">hello@gettrackio.com</a>
-               <p><strong>Follow Us</strong></p>
-               <a href="#">Instagram</a>
-            </div>
-         </div>
-      </footer>
-      <script src="app.js"></script>
-   </body>
+    <section>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col">
+            <img src="img/placeholder.png" alt="" />
+          </div>
+
+          <div class="col">
+            <h3>Track your personal</h3>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col">
+            <h3>Track your personal</h3>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="col"><img src="img/placeholder.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col"><img src="img/placeholder.png" alt="" /></div>
+
+          <div class="col">
+            <h3>Track your personal</h3>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="icons-section">
+      <div class="container">
+        <h3>Track your progress</h3>
+        <div class="row icons-row">
+          <div class="col"><img src="img/icon-placeholder.png" alt="" /></div>
+          <div class="col"><img src="img/icon-placeholder.png" alt="" /></div>
+          <div class="col"><img src="img/icon-placeholder.png" alt="" /></div>
+          <div class="col"><img src="img/icon-placeholder.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="left-col-footer">
+          <a href="#"><img src="/img/logo.svg" alt="" /></a>
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="middle-col-footer">
+          <p><strong>Contact Us</strong></p>
+          <a href="#">hello@gettrackio.com</a>
+          <p><strong>Follow Us</strong></p>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>
