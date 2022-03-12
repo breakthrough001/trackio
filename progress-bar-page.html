@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>trackio</title>
-  </head>
-  <body class="tracking-page">
-    <nav>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      <title>trackio</title>
+   </head>
+   <body class="tracking-page">
+      <nav>
+         <div class="container">
+            <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
+            <ul class="nav-links">
+               <a href="progress-bar-page.html"><li>Saving Goals</li></a>
+               <a href="#"><li>Account</li></a>
+               <a href="login.html"><li>Log In</li></a>
+            </ul>
+            <div class="burger">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+            </div>
+         </div>
+      </nav>
+
+      <div class="tracking-section">
+         <h1>Savings Goal:</h1>
+         <div class="user-goal-container">
+            <h2 class="user-goal-text"></h2>
+         </div>
+      </div>
+
+      <div class="form-container">
+         <div class="goal-container">
+            <span class="progressBarPercentage">$0</span>
+            <span class="progress-bar-goal"></span>
+         </div>
+
+         <div class="progress">
+            <div class="progress-done" id="data-container">
+               <p class="bar-progress">0%</p>
+            </div>
+         </div>
+
+         <div class="input-list-container">
+            <ul class="input-list"></ul>
+         </div>
+
+         <form class="user-input-form">
+            <input type="number" class="user-input" placeholder="Amount" />
+            <button class="input-button btn-primary" type="submit">
+               SUBMIT
+            </button>
+         </form>
+      </div>
+
       <div class="container">
-        <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
-        <ul>
-          <a href="#"><li>Saving Goals</li></a>
-          <a href="#"><li>Account</li></a>
-          <a href="#"><li>Log Out</li></a>
-        </ul>
-      </div>
-    </nav>
-    <div class="tracking-section">
-      <h1>Savings Goal:</h1>
-      <div class="user-goal-container">
-        <h2 class="user-goal-text"></h2>
-      </div>
-    </div>
-
-    <div class="form-container">
-      <div class="goal-container">
-        <span class="progressBarPercentage">$0</span>
-        <span class="progress-bar-goal"></span>
+         <form class="goal-form">
+            <div class="input-container">
+               <input type="text" id="user-wish" placeholder="Enter Goal" />
+               <input
+                  type="number"
+                  id="user-target"
+                  placeholder="Enter Target"
+               />
+            </div>
+            <button class="goal-button" type="submit">ENTER</button>
+         </form>
       </div>
 
-      <div class="progress">
-        <div class="progress-done" id="data-container">
-          <p class="bar-progress">0%</p>
-        </div>
-      </div>
-
-      <div class="input-list-container">
-        <ul class="input-list"></ul>
-      </div>
-
-      <form class="user-input-form">
-        <input type="number" class="user-input" placeholder="Amount" />
-        <button class="input-button btn-primary" type="submit">SUBMIT</button>
-      </form>
-    </div>
-
-    <div class="container">
-      <form class="goal-form">
-        <div class="input-container">
-          <input type="text" id="user-wish" placeholder="Enter Goal" />
-          <input type="number" id="user-target" placeholder="Enter Target" />
-        </div>
-        <button class="goal-button" type="submit">ENTER</button>
-      </form>
-    </div>
-
-    <footer>
-      <div class="container">
-        <div class="left-col-footer">
-          <a href="#"><img src="/img/logo.svg" alt="" /></a>
-          <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Contact</li></a>
-          </ul>
-        </div>
-        <div class="middle-col-footer">
-          <p><strong>Contact Us</strong></p>
-          <a href="#">hello@gettrackio.com</a>
-          <p><strong>Follow Us</strong></p>
-          <a href="#">Instagram</a>
-        </div>
-      </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+      <footer>
+         <div class="container">
+            <div class="left-col-footer">
+               <a href="#"><img src="/img/logo.svg" alt="" /></a>
+               <ul>
+                  <a href="#"><li>Home</li></a>
+                  <a href="#"><li>About</li></a>
+                  <a href="#"><li>Contact</li></a>
+               </ul>
+            </div>
+            <div class="middle-col-footer">
+               <p><strong>Contact Us</strong></p>
+               <a href="#">hello@gettrackio.com</a>
+               <p><strong>Follow Us</strong></p>
+               <a href="#">Instagram</a>
+            </div>
+         </div>
+      </footer>
+      <script src="app.js"></script>
+      <script src="nav.js"></script>
+   </body>
 </html>
