@@ -19,21 +19,30 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>User Signin</title>
+    <script src="nav.js" defer></script>
   </head>
   <body class="tracking-page">
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+    </button>
+
     <nav>
       <div class="container">
         <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
-        <ul class="nav-links">
-          <a href="progress-bar-page.html"><li>Saving Goals</li></a>
-          <a href="#"><li>Account</li></a>
-          <a href="login.html"><li>Log In</li></a>
+        <!-- removed nav-links from ul-->
+        <ul
+          data-visible="false"
+          id="primary-navigation"
+          class="primary-navigation"
+        >
+          <li><a href="progress-bar-page.html">Saving Goals</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="login.html">Log In</a></li>
         </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
       </div>
     </nav>
 
@@ -55,8 +64,13 @@
           </div>
           <div class="row">
             <form action="" class="d-flex justify-content-between w-100">
-              <input type="text" name="" placeholder="Enter email" id="" />
-              <button class="btn-primary">Sign in with Email</button>
+              <input
+                type="text"
+                name=""
+                placeholder="Enter email"
+                id="email-input"
+              />
+              <button class="btn-primary login-btn">Sign in with Email</button>
             </form>
           </div>
         </div>
