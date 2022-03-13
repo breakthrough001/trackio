@@ -19,21 +19,30 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>trackio</title>
+    <script src="nav.js" defer></script>
   </head>
   <body>
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+    </button>
+
     <nav>
       <div class="container">
         <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
-        <ul class="nav-links">
-          <a href="progress-bar-page.html"><li>Saving Goals</li></a>
-          <a href="#"><li>Account</li></a>
-          <a href="login.html"><li>Log In</li></a>
+        <!-- removed nav-links from ul-->
+        <ul
+          data-visible="false"
+          id="primary-navigation"
+          class="primary-navigation"
+        >
+          <li><a href="progress-bar-page.html">Saving Goals</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="login.html">Log In</a></li>
         </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
       </div>
     </nav>
 
@@ -77,7 +86,7 @@
 
     <section class="about-section">
       <div class="container">
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-center about-section__middle">
           <div class="col-md-5">
             <div>
               <h3>Save for that special item</h3>
@@ -168,8 +177,5 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
-    <script src="nav.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>

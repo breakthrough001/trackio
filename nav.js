@@ -1,30 +1,16 @@
-// NAV BAR
-const navSlide = () => {
-   const burger = document.querySelector(".burger");
-   const nav = document.querySelector(".nav-links");
-   const navLinks = document.querySelectorAll(".nav-links li");
+const primaryNav = document.querySelector('.primary-navigation');
+const navToggle = document.querySelector('.mobile-nav-toggle');
 
-   burger.addEventListener("click", () => {
-      nav.classList.toggle("nav-active");
+navToggle.addEventListener('click', () => {
+  const visibility = primaryNav.getAttribute('data-visible');
 
-      // Animate links
-      navLinks.forEach((link, index) => {
-         if (link.style.animation) {
-            link.style.animation = "";
-         } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${
-               index / 7 + 0.3
-            }s`;
-         }
-      });
+  if (visibility === 'false') {
+    primaryNav.setAttribute('data-visible', true);
+    navToggle.setAttribute('aria-expanded', true);
+  } else {
+    primaryNav.setAttribute('data-visible', false);
+    navToggle.setAttribute('aria-expanded', false);
+  }
+});
 
-      // Burger Animation
-      burger.classList.toggle("toggle");
-   });
-};
-
-const app = () => {
-   navSlide();
-};
-
-app();
+//  data-visible="false" is a good way to manipulate html elements with javascript
