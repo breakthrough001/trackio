@@ -521,6 +521,10 @@ footer img {
    h1 {
       font-size: 36px;
    }
+
+   .container {
+      padding: 10px 20px;
+   }
 }
 
 @media screen and (max-width: 500px) {
@@ -541,5 +545,11 @@ footer img {
 @supports (backdrop-filter: blur(1rem)) {
    .primary-navigation {
       background: #fff;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .hero-text-container button {
+      width: 100%;
    }
 }
