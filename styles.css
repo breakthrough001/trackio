@@ -359,6 +359,67 @@ input::-webkit-inner-spin-button {
    width: 100%;
 }
 
+/*** PRICING CARDS ***/
+
+.card-pricing {
+   border: 1px solid #46385b;
+   border-radius: 10px;
+   width: 400px;
+   height: 100%;
+}
+
+.row .card-pricing {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+.card-header {
+   width: 100%;
+}
+
+.card-header:first-child {
+   border-top-left-radius: inherit;
+   border-top-right-radius: inherit;
+}
+
+.card-body {
+   padding: 20px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+
+.card-header-free {
+   background-color: #fda085;
+   color: #fff;
+}
+
+.card-header-personal {
+   background-color: #ff005c;
+   color: #fff;
+}
+
+.card-header-enterprise {
+   background-color: #46385b;
+   color: #fff;
+}
+
+.card-benefits {
+   padding: 0 40px;
+}
+
+.card-benefits li {
+   text-align: left;
+}
+
+.btn-secondary {
+   background: none;
+   border: solid 2px #ff005c;
+   color: #ff005c;
+   font-size: 20px;
+}
+
 /**** FOOTER STYLING ***/
 
 footer {

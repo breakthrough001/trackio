@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      <title>User Signin</title>
+      <script src="nav.js" defer></script>
+   </head>
+   <body>
+      <button
+         class="mobile-nav-toggle"
+         aria-controls="primary-navigation"
+         aria-expanded="false"
+      >
+         <span class="sr-only">Menu</span>
+      </button>
+
+      <nav>
+         <div class="container">
+            <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
+            <!-- removed nav-links from ul-->
+            <ul
+               data-visible="false"
+               id="primary-navigation"
+               class="primary-navigation"
+            >
+               <li><a href="index.html">Home</a></li>
+               <li><a href="goal-tracking-page.html">Goal Tracking</a></li>
+               <li><a href="#">Pricing</a></li>
+               <li><a href="login.html">Sign In</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <section>
+         <div class="container">
+            <h1 class="text-center my-5">Pricing</h1>
+            <div class="row d-flex justify-content-between h-100">
+               <div class="col-md-4 card-pricing text-center">
+                  <div class="card-header card-header-free">
+                     <h6>Starter</h6>
+                  </div>
+                  <div class="card-body">
+                     <h5>Free</h5>
+                     <h6>Forever</h6>
+                     <div class="card-benefits">
+                        <ul>
+                           <li>3 goal trackings</li>
+                           <li>Unlimited edits</li>
+                           <li>Unlimited new goal updates</li>
+                        </ul>
+                     </div>
+                     <button class="btn-secondary">Choose Free</button>
+                  </div>
+               </div>
+
+               <div class="col-md-4 card-pricing text-center">
+                  <div class="card-header card-header-personal">
+                     <h6>Personal</h6>
+                  </div>
+                  <div class="card-body">
+                     <h5>$5 per person/month</h5>
+                     <h6>Billed annually or $7 month-to-month</h6>
+                     <div class="card-benefits">
+                        <ul>
+                           <li>Unlimited goal trackings</li>
+                           <li>Unlimited edits</li>
+                           <li>Unlimited new goal updates</li>
+                           <li>Notifications and reminders</li>
+                        </ul>
+                     </div>
+                     <button class="btn-primary">Choose Personal</button>
+                  </div>
+               </div>
+
+               <div class="col-md-4 card-pricing text-center">
+                  <div class="card-header card-header-enterprise">
+                     <h6>Enterprise</h6>
+                  </div>
+                  <div class="card-body">
+                     <h5>$25 per person/month</h5>
+                     <h6>Billed annually or $27 month-to-month</h6>
+                     <div class="card-benefits">
+                        <ul>
+                           <li>Unlimited goal trackings</li>
+                           <li>Unlimited edits</li>
+                           <li>Unlimited new goal updates</li>
+                           <li>Notifications and reminders</li>
+                           <li>API integrations</li>
+                        </ul>
+                     </div>
+                     <div class="contact-sales">
+                        <p>Contact sales</p>
+                     </div>
+                     <button class="btn-secondary">Choose Enterprise</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <div class="container">
+            <div class="left-col-footer">
+               <a href="#"><img src="/img/logo.svg" alt="" /></a>
+               <ul>
+                  <a href="goal-tracking-page.html"><li>Goal Tracking</li></a>
+                  <a href="#"><li>Pricing</li></a>
+                  <a href="login.html"><li>Sign in</li></a>
+               </ul>
+            </div>
+            <div class="middle-col-footer">
+               <p><strong>Contact Us</strong></p>
+               <a href="#">hello@gettrackio.com</a>
+               <p class="mt-3"><strong>Follow Us</strong></p>
+               <a href="#">Instagram</a>
+            </div>
+         </div>
+      </footer>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+         crossorigin="anonymous"
+      ></script>
+
+      <script src="nav.js"></script>
+   </body>
+</html>
