@@ -237,7 +237,7 @@ input::-webkit-inner-spin-button {
 .goal-form {
   margin: 50px auto 0;
   text-align: right;
-  max-width: 100%;
+  max-width: 600px;
 }
 
 .goal-button {
@@ -314,6 +314,7 @@ input::-webkit-inner-spin-button {
   border-radius: 10px;
   margin: 0;
   transition: ease-in-out 0.4s ease;
+  cursor: pointer;
 }
 
 .social-signin:hover {
@@ -361,6 +362,7 @@ footer .container {
 
 footer ul {
   margin-top: 1rem;
+  padding-left: 0;
 }
 footer li {
   list-style: none;
@@ -377,6 +379,10 @@ footer img {
 
 .middle-col-footer p {
   margin-bottom: 10px;
+}
+
+.social-heading {
+  margin-top: 10px;
 }
 
 /*** MOBILE NAV BAR STYLING ***/
@@ -463,6 +469,42 @@ footer img {
   .container,
   .container-sm {
     max-width: 100%;
+  }
+
+  .login-btn {
+    display: block !important;
+    width: 100%;
+  }
+  .login-form {
+    display: block !important;
+    width: 100%;
+  }
+
+  .login-form input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hero-img-container {
+    margin-top: 50px;
+  }
+
+  .hero-text-container {
+    margin-top: 50px;
+  }
+
+  .hero-section {
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: 30%;
+    border-bottom: 1px solid #46385b;
+  }
+
+  h1 {
+    font-size: 36px;
   }
 }
 
