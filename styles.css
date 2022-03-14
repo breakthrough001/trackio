@@ -383,11 +383,11 @@ input::-webkit-inner-spin-button {
 }
 
 .card-body {
+   height: 100%;
    padding: 20px 20px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   height: 100%;
 }
 
 .card-header-free {
