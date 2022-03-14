@@ -19,6 +19,7 @@ body {
 
 .tracking-page {
   background: linear-gradient(112.87deg, #f6d365 0%, #fda085 100%);
+  overflow-x: hidden;
 }
 
 /*** Tracking Page ***/
