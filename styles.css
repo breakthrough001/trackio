@@ -99,6 +99,11 @@ button {
    letter-spacing: 1px;
 }
 
+ol,
+ul {
+   padding-left: 0 !important;
+}
+
 section {
    margin: 60px 0;
 }
