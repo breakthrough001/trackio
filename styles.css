@@ -415,6 +415,32 @@ input::-webkit-inner-spin-button {
   border: none;
 }
 
+.card__button {
+  background-color: #fff;
+  border: 2px solid #ff005c;
+  color: #ff005c;
+  transition: ease-in-out 400ms;
+}
+
+.card__button:hover {
+  background-color: #ff005c;
+  border: 2px solid #ff005c;
+  color: #fff;
+  transition: all 300ms;
+}
+
+.card__button-main {
+  background-color: #ff005c;
+  border: 2px solid #ff005c;
+  color: #fff;
+}
+
+.card__button-main:hover {
+  background-color: #71d8a4;
+  border: 2px solid #71d8a4;
+  color: #fff;
+}
+
 .card__container {
   gap: 3rem 1.25rem !important;
 }
