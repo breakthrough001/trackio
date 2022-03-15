@@ -552,7 +552,7 @@ input::-webkit-inner-spin-button {
 }
 
 .card__button {
-  margin-top: auto;
+  align-self: flex-end;
 }
 
 /*================ MEDIA QUERIES ================*/
