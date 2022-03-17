@@ -4,6 +4,8 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link
          rel="stylesheet"
          href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -51,7 +53,7 @@
          </div>
       </nav>
 
-      <section class="card container grid">
+      <section class="card container grid" data-aos="zoom-in">
          <h1 class="text-center my-5">Pricing</h1>
          <div class="card__container grid">
             <!--=============== CARD 1 ================-->
@@ -198,7 +200,12 @@
          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
          crossorigin="anonymous"
       ></script>
-
       <script src="nav.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init({
+            duration: 1000,
+         });
+      </script>
    </body>
 </html>

@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -47,14 +48,14 @@
          </div>
       </nav>
 
-      <div class="container text-center mt-5">
+      <div class="container text-center mt-5" data-aos="zoom-in">
          <h1>Savings Goal:</h1>
          <div class="user-goal-container">
             <h2 class="user-goal-text"></h2>
          </div>
       </div>
 
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
          <div class="progress-container">
             <div class="goal-container">
                <span class="progressBarPercentage">$0</span>
@@ -82,7 +83,7 @@
          </div>
       </div>
 
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
          <form class="goal-form">
             <div class="input-container">
                <input type="text" id="user-wish" placeholder="Enter Goal" />
@@ -126,5 +127,11 @@
          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
          crossorigin="anonymous"
       ></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init({
+            duration: 1000,
+         });
+      </script>
    </body>
 </html>
