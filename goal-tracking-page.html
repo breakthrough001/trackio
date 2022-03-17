@@ -1,137 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-      />
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-         crossorigin="anonymous"
-      />
-      <link rel="stylesheet" href="styles.css" />
-      <title>Trackio</title>
-      <script src="nav.js" defer></script>
-   </head>
-   <body class="tracking-page">
-      <button
-         class="mobile-nav-toggle"
-         aria-controls="primary-navigation"
-         aria-expanded="false"
-      >
-         <span class="sr-only">Menu</span>
-      </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Trackio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <script src="nav.js" defer></script>
+  </head>
+  <body class="tracking-page">
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+    </button>
 
-      <nav>
-         <div class="container">
-            <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
-            <!-- removed nav-links from ul-->
-            <ul
-               data-visible="false"
-               id="primary-navigation"
-               class="primary-navigation"
-            >
-               <li><a href="index.html">Home</a></li>
-               <li><a href="goal-tracking-page.html">Goal Tracking</a></li>
-               <li><a href="pricing">Pricing</a></li>
-               <li><a href="login.html">Sign In</a></li>
+    <nav>
+      <div class="container">
+        <a href="index.html"><img src="/img/logo.svg" alt="" /></a>
+        <!-- removed nav-links from ul-->
+        <ul
+          data-visible="false"
+          id="primary-navigation"
+          class="primary-navigation"
+        >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="goal-tracking-page.html">Goal Tracking</a></li>
+          <li><a href="pricing">Pricing</a></li>
+          <li><a href="login.html">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container text-center mt-5" data-aos="zoom-in">
+      <h1>Savings Goal:</h1>
+      <div class="user-goal-container">
+        <h2 class="user-goal-text"></h2>
+      </div>
+    </div>
+
+    <div class="container" data-aos="zoom-in">
+      <div class="progress-container">
+        <div class="goal-container">
+          <span class="progressBarPercentage">$0</span>
+          <span class="progress-bar-goal"></span>
+        </div>
+
+        <div class="progress">
+          <div class="progress-done" id="data-container">
+            <p class="bar-progress">0%</p>
+          </div>
+        </div>
+
+        <div class="input-list-container">
+          <ul class="input-list"></ul>
+        </div>
+
+        <form
+          class="user-input-form d-flex justify-content-between align-items-center"
+        >
+          <input type="number" class="user-input" placeholder="Amount" />
+          <button class="input-button btn-primary" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container" data-aos="zoom-in">
+      <form class="goal-form">
+        <div class="input-container">
+          <input type="text" id="user-wish" placeholder="Enter Goal" />
+          <input type="number" id="user-target" placeholder="Enter Target" />
+        </div>
+        <button class="goal-button" type="submit">ENTER</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 footer-col">
+            <a href="#"><img src="/img/logo.svg" alt="" /></a>
+            <ul>
+              <a href="goal-tracking-page.html"><li>Goal Tracking</li></a>
+              <a href="pricing.html"><li>Pricing</li></a>
+              <a href="login.html"><li>Sign in</li></a>
             </ul>
-         </div>
-      </nav>
-
-      <div class="container text-center mt-5" data-aos="zoom-in">
-         <h1>Savings Goal:</h1>
-         <div class="user-goal-container">
-            <h2 class="user-goal-text"></h2>
-         </div>
+          </div>
+          <div class="col"></div>
+          <div class="col-4">
+            <p><strong>Contact Us</strong></p>
+            <a href="#">hello@gettrackio.com</a>
+            <p class="mt-3"><strong>Follow Us</strong></p>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
       </div>
-
-      <div class="container" data-aos="zoom-in">
-         <div class="progress-container">
-            <div class="goal-container">
-               <span class="progressBarPercentage">$0</span>
-               <span class="progress-bar-goal"></span>
-            </div>
-
-            <div class="progress">
-               <div class="progress-done" id="data-container">
-                  <p class="bar-progress">0%</p>
-               </div>
-            </div>
-
-            <div class="input-list-container">
-               <ul class="input-list"></ul>
-            </div>
-
-            <form
-               class="user-input-form d-flex justify-content-between align-items-center"
-            >
-               <input type="number" class="user-input" placeholder="Amount" />
-               <button class="input-button btn-primary" type="submit">
-                  SUBMIT
-               </button>
-            </form>
-         </div>
-      </div>
-
-      <div class="container" data-aos="zoom-in">
-         <form class="goal-form">
-            <div class="input-container">
-               <input type="text" id="user-wish" placeholder="Enter Goal" />
-               <input
-                  type="number"
-                  id="user-target"
-                  placeholder="Enter Target"
-               />
-            </div>
-            <button class="goal-button" type="submit">ENTER</button>
-         </form>
-      </div>
-
-      <footer>
-         <div class="container">
-            <div class="row">
-               <div class="col-4 footer-col">
-                  <a href="#"><img src="/img/logo.svg" alt="" /></a>
-                  <ul>
-                     <a href="goal-tracking-page.html"
-                        ><li>Goal Tracking</li></a
-                     >
-                     <a href="pricing.html"><li>Pricing</li></a>
-                     <a href="login.html"><li>Sign in</li></a>
-                  </ul>
-               </div>
-               <div class="col"></div>
-               <div class="col-4">
-                  <p><strong>Contact Us</strong></p>
-                  <a href="#">hello@gettrackio.com</a>
-                  <p class="mt-3"><strong>Follow Us</strong></p>
-                  <a href="#">Instagram</a>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <script src="app.js"></script>
-      <script src="nav.js"></script>
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-         crossorigin="anonymous"
-      ></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-         AOS.init({
-            duration: 1000,
-         });
-      </script>
-   </body>
+    </footer>
+    <script src="app.js"></script>
+    <script src="nav.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
 </html>
